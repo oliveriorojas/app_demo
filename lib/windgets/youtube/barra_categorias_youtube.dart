@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../theme/colores_youtube.dart';
+import '../../../theme/colores_youtube.dart';
 
 class BarraCategoriasYoutube extends StatelessWidget {
   const BarraCategoriasYoutube({super.key});

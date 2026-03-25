@@ -1,9 +1,9 @@
+import 'package:app_demo/windgets/youtube/contenido_principal_youtube.dart';
 import 'package:flutter/material.dart';
 import '../theme/colores_youtube.dart';
-import '../windgets/youtube/barra_superior_youtube.dart'; 
-import '../windgets/youtube/menu_lateral_youtube.dart'; 
+import '../windgets/youtube/barra_superior_youtube.dart';
+import '../windgets/youtube/menu_lateral_youtube.dart';
 import '../windgets/youtube/barra_categorias_youtube.dart';
-
 
 class PantallaYoutube extends StatelessWidget {
   const PantallaYoutube({super.key});
@@ -24,9 +24,7 @@ class PantallaYoutube extends StatelessWidget {
                     child: Column(
                       children: [
                         BarraCategoriasYoutube(),
-                        Expanded(
-                          child: ContenidoPrincipalYoutube(),
-                        ),
+                        Expanded(child: ContenidoPrincipalYoutube()),
                       ],
                     ),
                   ),

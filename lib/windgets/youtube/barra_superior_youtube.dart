@@ -12,20 +12,14 @@ class BarraSuperiorYoutube extends StatelessWidget {
       decoration: const BoxDecoration(
         color: ColoresYoutube.fondoPrincipal,
         border: Border(
-          bottom: BorderSide(
-            color: ColoresYoutube.borde,
-            width: 0.4,
-          ),
+          bottom: BorderSide(color: ColoresYoutube.borde, width: 0.4),
         ),
       ),
       child: Row(
         children: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(
-              Icons.menu,
-              color: ColoresYoutube.textoPrincipal,
-            ),
+            icon: const Icon(Icons.menu, color: ColoresYoutube.textoPrincipal),
           ),
           const SizedBox(width: 8),
           Row(
@@ -55,10 +49,7 @@ class BarraSuperiorYoutube extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          const SizedBox(
-            width: 650,
-            child: _BuscadorYoutube(),
-          ),
+          const SizedBox(width: 650, child: _BuscadorYoutube()),
           const Spacer(),
           IconButton(
             onPressed: () {},
@@ -106,9 +97,7 @@ class _BuscadorYoutube extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(24),
-              border: Border.all(
-                color: ColoresYoutube.borde,
-              ),
+              border: Border.all(color: ColoresYoutube.borde),
             ),
             child: const TextField(
               style: TextStyle(color: ColoresYoutube.textoPrincipal),
@@ -116,7 +105,10 @@ class _BuscadorYoutube extends StatelessWidget {
                 hintText: 'Buscar',
                 hintStyle: TextStyle(color: ColoresYoutube.textoSecundario),
                 border: InputBorder.none,
-                contentPadding: EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+                contentPadding: EdgeInsets.symmetric(
+                  horizontal: 18,
+                  vertical: 10,
+                ),
               ),
             ),
           ),
@@ -130,10 +122,7 @@ class _BuscadorYoutube extends StatelessWidget {
             borderRadius: BorderRadius.circular(24),
             border: Border.all(color: ColoresYoutube.borde),
           ),
-          child: const Icon(
-            Icons.search,
-            color: ColoresYoutube.textoPrincipal,
-          ),
+          child: const Icon(Icons.search, color: ColoresYoutube.textoPrincipal),
         ),
       ],
     );

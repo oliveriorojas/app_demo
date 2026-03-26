@@ -17,16 +17,13 @@ class BarraCategoriasYoutube extends StatelessWidget {
     ];
 
     return Container(
-      height: 60,
+      height: 35,
       alignment: Alignment.centerLeft,
       padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: const BoxDecoration(
         color: ColoresYoutube.fondoPrincipal,
         border: Border(
-          bottom: BorderSide(
-            color: ColoresYoutube.borde,
-            width: 0.4,
-          ),
+          bottom: BorderSide(color: ColoresYoutube.borde, width: 0.4),
         ),
       ),
       child: ListView.separated(
